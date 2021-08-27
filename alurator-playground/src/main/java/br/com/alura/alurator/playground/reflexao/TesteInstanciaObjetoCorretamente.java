@@ -2,6 +2,9 @@ package br.com.alura.alurator.playground.reflexao;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Arrays;
+import java.util.List;
 
 import br.com.alura.alurator.playground.controle.SubControle;
 
@@ -35,6 +38,24 @@ public class TesteInstanciaObjetoCorretamente {
 //		Object subControle = construtorSubControle.newInstance();
 //		
 //		System.out.println(subControle);
+
+		for (Method m : subControleClasse1.getMethods()) {
+			System.out.println(m);
+		}
+		System.out.println("");
+		for (Method m : subControleClasse1.getDeclaredMethods()) {
+			System.out.println(m);
+		}
+
+		Method metodoSubControle2 = subControleClasse1.getDeclaredMethod("metodoSubControle1");
+		metodoSubControle2.setAccessible(true);
+		try {
+			Object object = metodoSubControle2.invoke(new SubControle());
+			System.out.println(object);
+		} catch (InvocationTargetException e) {
+			e.printStackTrace();
+			throw new RuntimeException("Erro na execução do método: " + e.getTargetException());
+		}
 	}
 
 }
