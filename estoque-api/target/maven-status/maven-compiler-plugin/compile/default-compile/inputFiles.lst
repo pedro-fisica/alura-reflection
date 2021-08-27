@@ -1,0 +1,5 @@
+/home/pedrosantos/Estudos/Reflection/estoque-api/src/main/java/br/com/alura/estoque/modelo/Produto.java
+/home/pedrosantos/Estudos/Reflection/estoque-api/src/main/java/br/com/alura/estoque/dao/ProdutoDao.java
+/home/pedrosantos/Estudos/Reflection/estoque-api/src/main/java/br/com/alura/estoque/Main.java
+/home/pedrosantos/Estudos/Reflection/estoque-api/src/main/java/br/com/alura/estoque/dao/ProdutoDaoMock.java
+/home/pedrosantos/Estudos/Reflection/estoque-api/src/main/java/br/com/alura/estoque/controle/ProdutoController.java

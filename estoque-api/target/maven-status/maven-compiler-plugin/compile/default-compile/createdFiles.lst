@@ -1,0 +1,5 @@
+br/com/alura/estoque/dao/ProdutoDao.class
+br/com/alura/estoque/controle/ProdutoController.class
+br/com/alura/estoque/Main.class
+br/com/alura/estoque/modelo/Produto.class
+br/com/alura/estoque/dao/ProdutoDaoMock.class
